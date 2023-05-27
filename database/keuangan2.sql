@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2023 at 01:31 PM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Generation Time: Oct 30, 2019 at 08:11 AM
+-- Server version: 10.1.31-MariaDB
+-- PHP Version: 7.2.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -39,8 +40,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id_admin`, `nama`, `email`, `pass`) VALUES
-(1, 'Bargana Kukuh Raditya', 'bargana@gmail.com', 'tes123'),
-(2, 'Ghaida Fasya Yuthika Afifah', 'ghaida@mail.com', 'tes123');
+(1, 'saiful', 'saiful@mail.com', 'tes123'),
+(2, 'riza', 'riza@mail.com', 'tes123');
 
 -- --------------------------------------------------------
 
@@ -118,8 +119,8 @@ CREATE TABLE `karyawan` (
 --
 
 INSERT INTO `karyawan` (`id_karyawan`, `nama`, `posisi`, `alamat`, `umur`, `kontak`) VALUES
-(1, 'Ghaida Fasya Yuthika Afifah', '', 'Bandung', 0, '081908915320'),
-(6, 'Bargana Kukuh Raditya', '', 'Bandung', 0, '0882917943');
+(1, 'saiful', 'ketua', 'mns.aron', 19, '0888888'),
+(6, 'Riza', 'Bendahara', 'Aceh', 19, '08333333333');
 
 -- --------------------------------------------------------
 
@@ -139,6 +140,7 @@ CREATE TABLE `pemasukan` (
 --
 
 INSERT INTO `pemasukan` (`id_pemasukan`, `tgl_pemasukan`, `jumlah`, `id_sumber`) VALUES
+(1, '2019-10-16', 100000, 1),
 (2, '2019-10-24', 500000, 1),
 (3, '2019-10-17', 200000, 5),
 (4, '2019-10-18', 400000, 3),
@@ -158,9 +160,7 @@ INSERT INTO `pemasukan` (`id_pemasukan`, `tgl_pemasukan`, `jumlah`, `id_sumber`)
 (20, '2019-10-28', 590000, 3),
 (21, '2019-10-29', 600000, 4),
 (22, '2019-10-30', 600000, 5),
-(23, '2019-10-25', 7000000, 1),
-(24, '2023-05-27', 10000, 2),
-(25, '2023-05-26', 2100000, 1);
+(23, '2019-10-25', 7000000, 1);
 
 -- --------------------------------------------------------
 
@@ -180,7 +180,7 @@ CREATE TABLE `pengeluaran` (
 --
 
 INSERT INTO `pengeluaran` (`id_pengeluaran`, `tgl_pengeluaran`, `jumlah`, `id_sumber`) VALUES
-(1, '2023-05-27', 1100000, 1),
+(1, '2019-10-22', 1100000, 10),
 (3, '2019-10-16', 200000, 7),
 (4, '2019-10-17', 3000000, 6),
 (5, '2019-10-18', 100000, 7),
@@ -215,9 +215,16 @@ CREATE TABLE `sumber` (
 --
 
 INSERT INTO `sumber` (`id_sumber`, `nama`) VALUES
-(1, 'Usaha Kuliner'),
-(2, 'Usaha Fashion'),
-(3, 'Usaha Agribisnis');
+(1, 'Buat Web Pemerintah'),
+(2, 'Desain Poster Lomba'),
+(3, 'Instalasi Softwre'),
+(4, 'Instalasi OS'),
+(5, 'Buat Video Animasi'),
+(6, 'Domain'),
+(7, 'Hosting'),
+(8, 'Listrik'),
+(9, 'Air'),
+(10, 'Wifi');
 
 -- --------------------------------------------------------
 
@@ -327,7 +334,7 @@ ALTER TABLE `karyawan`
 -- AUTO_INCREMENT for table `pemasukan`
 --
 ALTER TABLE `pemasukan`
-  MODIFY `id_pemasukan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_pemasukan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `pengeluaran`
