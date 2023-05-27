@@ -1,0 +1,12 @@
+[2023-24-05:09:47:28] Nama Admin : Ghaida Fasya => Edit Pemasukan => 1 => Sukses Edit
+
+[2023-24-05:09:57:02] Nama Admin : Ghaida Fasya => Edit Pemasukan => 1 => Sukses Edit
+
+[2023-24-05:09:57:12] Nama Admin : Ghaida Fasya => Edit Pemasukan => 1 => Sukses Edit
+
+[2023-24-05:09:57:19] Nama Admin : Ghaida Fasya => Edit Pemasukan => 2 => Sukses Edit
+
+[2023-24-05:09:58:16] Nama Admin : Ghaida Fasya => Edit Pemasukan => 23 => Sukses Edit
+
+[2023-24-05:10:08:00] Nama Admin : Ghaida Fasya => Edit Pemasukan => 2 => Sukses Edit
+
